@@ -40,9 +40,11 @@ body{
         background: linear-gradient(45deg, black,#663399);
         background-attachment: fixed;
             main {
+                header.mainmenu{
                 img {
                     height: 200px;
                     width: 200px;
+                 }
                 }
         menu.mainmenu{
             margin-top: 2rem;
@@ -59,6 +61,15 @@ body{
                     } 
                 }
             }
+        }
+    }
+    section {
+        margin: 2rem auto;
+        h2.subtittle {
+            color: #ab7dd9;
+            border-bottom: 2px dotted #ab7dd9;
+            padding-bottom: 0.4rem;
+
         }
     }
     }

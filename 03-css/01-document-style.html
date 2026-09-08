@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-document-style </title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        div.flag {
+            width: 280px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem auto;
+           &.colombia {
+            background: linear-gradient(to bottom, yellow 50%, blue 50%, blue 75%, red 75%);
+
+            }
+        }
+
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>01-template </h1>
+            <img src="../src/img/logo-css.png" alt="css">
+            <h3>This way we can include CSS within the style tag, it is very useful when you only have an html document.</h3>
+            </header>
+            <section>
+                <h2 class="subtittle">Colombia Flag: </h2>
+                <div class="flag colombia"></div> 
+            </section>
+    </main>
+</body>
+</html>
