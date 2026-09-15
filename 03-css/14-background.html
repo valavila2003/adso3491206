@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-background</title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        section {
+            div {
+                height: 400px;
+                margin: 2rem auto;
+                border: 2px solid #fff9
+                width: 360px;
+                &.bg01 {
+                    background-color: #ab7dd9;
+                }
+                &.bg02 {
+                    background-image: url(imgs/mario.png);
+                    background-size: 25%;
+
+                }
+                 &.bg03 {
+                    background-image: url(imgs/mario.png);
+                    background-size: 25%;
+                    background-repeat: repeat-x;
+                }
+                 &.bg04 {
+                    background-image: url(imgs/mario.png);
+                    background-size: 25%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                &.bg05 {
+                    background-image: url(imgs/mario.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                &.bg06 {
+                    background-image: url(imgs/mario.png);
+                    background-size: 100%;
+                    background-repeat: repeat;
+                    background-position: center;
+                    background-attachment: fixed;
+
+                }
+
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>14-background</h1>
+            <img src="../src/img/logo-css.png" alt="css">
+            <h3>Propierty sets all bakcground styles in one declaration</h3>
+            <ul>
+                <li> Background-color </li>
+                <li>background-image </li>
+                <li>background-repeat</li>
+                <li>background-position</li>
+                <li>background-size</li>
+                <li>background-attachment</li>
+            </ul>
+            </header>
+         <section>
+            <h2 class="subtitle">Background color: </h2>
+            <div class="bg01"></div>
+            <h2 class="subtitle">Background image: </h2>
+            <div class="bg02"></div>
+            <h2 class="subtitle">Background Repeat: </h2>
+            <div class="bg03"></div>
+            <h2 class="subtitle">Background Position: </h2>
+            <div class="bg04"></div>
+            <h2 class="subtitle">Background size: </h2>
+            <div class="bg05"></div>
+            <h2 class="subtitle">Background Attachment: </h2>
+            <div class="bg06"></div>
+         </section>
+    </main>
+</body>
+</html>

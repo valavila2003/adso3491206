@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-colors-alpha</title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        div.mario {
+            background: url(imgs/mario.png) no-repeat
+                        center /contain;
+            border: 2px solid #fff9;
+            margin: 1rem auto;
+            display: flex;
+            justify-content: center;
+            aling-items: center;
+            flex-wrap: wrap;
+            height: 400px;
+            width: 300px;
+            div {
+                background:  #fff9;
+                heigt: 100px;
+                width: 100px;
+                &.box01{background-color: #ffff;}
+                &.box02{background-color: #fffe;}
+                &.box03{background-color: #fffd;}
+                &.box04{background-color: #fffc;}
+                &.box05{background-color: #fffb;}
+                &.box06{background-color: #fffa;}
+                &.box07{background-color: #fff9;}
+                &.box08{background-color: #fff8;}
+                &.box09{background-color: #fff7;}
+                &.box10{background-color: #fff6;}
+                &.box11{background-color: #fff5;}
+                &.box02{background-color: #fff4;}              
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>12-colors-alpha</h1>
+            <img src="../src/img/logo-css.png" alt="css">
+            <h3>The fourth alpha channel allows you to apply opacity or transparency to the color.</h3>
+            </header>
+            <section>
+                <h2 class="subtitle">Example:</h2>
+                <div class="mario">
+                    <div class="box01"></div>
+                    <div class="box02"></div>
+                    <div class="box03"></div>
+                    <div class="box04"></div>
+                    <div class="box05"></div>
+                    <div class="box06"></div>
+                    <div class="box07"></div>
+                    <div class="box08"></div>
+                    <div class="box09"></div>
+                    <div class="box10"></div>
+                    <div class="box11"></div>
+                    <div class="box12"></div>
+                </div>
+            </section>
+    </main>
+</body>
+</html>

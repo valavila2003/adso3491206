@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-box-model</title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        section img {
+            /*border: */
+            border-width: 4px;
+            border-style: solid;
+            border-color: #fff;
+            /* border shorthand*/
+            border: 4px solid #fff; 
+            /* padding: */
+            padding-top: 4px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+            /* padding shorthand: */
+            padding: 4px;
+            width: 360px; /*total width: (360+8+8+40=416px)*/
+            display: block;
+            /* margin: */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            /* margin shorthand XY: */
+            margin-block: 20px;
+            margin-inline: auto;
+            /*margin shortand: */
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>13-box-model</h1>
+            <img src="../src/img/logo-css.png" alt="css">
+            <h3>Is essentially a box that wraps around every html element.</h3>
+            </header>
+            <section>
+                    <h2 class="subtitle">Example: </h2>
+                    <img src="imgs/box-model.png" alt="css">
+            </section>
+    </main>
+</body>
+</html>
