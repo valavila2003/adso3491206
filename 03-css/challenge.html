@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Sprite</title>
+    <style>
+        /* --- Tema 01 y 06: Reset --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+
+        /* --- Tema 13, 14 y 08: Box Model, Background y Unidades --- */
+        body {
+            border: 10px solid #fff; 
+            background-color: #17a053; 
+            min-height: 100vh;
+            font-family: Arial, sans-serif; /* Tema 18: Tipografía */
+            color: #fff;
+        }
+
+        /* Contenedor principal */
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto; /* Centrar horizontalmente */
+            padding-top: 2rem;
+        }
+
+        /* --- Tema 14: Background (Tu código original) --- */
+        header figure.logo {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -25px -420px;
+            height: 160px;
+            margin: 2rem auto;
+            width: 160px;
+        }
+
+        /* --- Tema 21: Listas y Tema 17: Visualización --- */
+        nav {
+            text-align: center; /* Centra los elementos en línea */
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none; /* Quita los puntos de la lista */
+        }
+
+        nav li {
+            display: inline-block; /* Pone los elementos en fila (técnica clásica) */
+            margin: 0 10px; /* Separación entre botones */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6); /* Tema 12: Colores Alpha */
+            padding: 15px 30px; /* Tema 13: Box Model */
+            font-weight: bold;
+            font-size: 14px;
+            border-bottom: 4px solid #fff; /* Línea blanca inferior */
+            display: block; /* Hace que todo el bloque sea clickeable */
+        }
+
+        /* --- Tema 20: Pseudoclases --- */
+        nav a:hover {
+            background-color: #000;
+        }
+
+        /* Estilo para el botón activo (Portfolio) */
+        nav a.active {
+            background-color: #000;
+            border-bottom: 4px solid #f1c40f; /* Línea amarilla */
+        }
+
+        /* --- Tema 15 y 16: Position y Float (Contenedor de Tarjetas) --- */
+        section.cards-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            /* Solución clásica para que el contenedor abrace a los hijos flotantes */
+            overflow: hidden; 
+        }
+
+        /* --- Tema 13 y 16: Box Model y Float (Tarjetas) --- */
+        .card {
+            background-color: #ccc;
+            width: 31%; /* Ancho para que quepan 3 con espacio */
+            float: left; /* Técnica clásica para alinear horizontalmente */
+            margin-right: 3.5%; /* Espacio a la derecha */
+            border: 3px solid #fff;
+            text-align: center;
+            color: #000;
+        }
+
+        /* Quitamos el margen a la última tarjeta para que encaje perfecto */
+        .card:last-child {
+            margin-right: 0;
+        }
+
+        .card h3 {
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .card-image {
+            height: 150px;
+            background-position: ;
+            background-color: #4CAF50; /* Color de respaldo */
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <figure class="logo"></figure>
+        </header>
+
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">NOSOTROS</a></li>
+                <li><a href="#" class="active">PORTFOLIO</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección de Tarjetas -->
+        <section class="cards-container">
+            
+            <div class="card">
+                <h3>Sprite 01</h3>
+                <div class="card-image" style="background-image: url('imgs/spriteweb.png');"></div>
+            </div>
+
+            <div class="card">
+                <h

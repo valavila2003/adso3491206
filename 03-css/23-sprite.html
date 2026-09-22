@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23-sprite</title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        div#runner {
+            background: url(imgs/run-sprite.png) no-repeat;
+            margin: 2rem auto;
+            height: 256px;
+            width: 256px;
+            &.sp1 { background-position: calc(-256px * 0) 0;}
+            &.sp2 { background-position: calc(-256px * 1) 0;}
+            &.sp3 { background-position: calc(-256px * 2) 0;}
+            &.sp4 { background-position: calc(-256px * 3) 0;}
+            &.sp5 { background-position: calc(-256px * 4) 0;}
+            &.sp6 { background-position: calc(-256px * 5) 0;}
+        }
+        div#dino {
+            background: url(imgs/dino-sprite.png) no-repeat;
+            margin: 2rem auto;
+            height: 128px;
+            width: 128px;
+            &.sp1 { background-position: calc(-128px * 0) 0;}
+            &.sp2 { background-position: calc(-128px * 1) 0;}
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>23-sprite </h1>
+            <img src="../src/img/logo-css.png" alt="Css">
+            <h3>An image sprite is a collection of images put into a single image.</h3>
+            </header>
+            <section>
+            <h2 class="subtitle">Runner:</h2>
+            <div id="runner" class="sp1"></div>
+            <h2 class="subtitle">Dino:</h2>
+            <div id="dino" class="sp1"></div>
+        </section>
+    </main>
+    <script>
+        const runner = document.getElementById('runner');
+        const runnerSprites = 6;
+        let runnerCount     = 1;
+        setInterval (() => {
+            if(runnerCount == runnerSprites) {
+                runner.className = '';
+                runnerCount = 1;
+            } else {
+                runner.className = '';
+                runner.classList.add('sp' + ++runnerCount);
+            }
+        }, 80);
+    </script>
+    <script>
+         const dino = document.getElementById('dino');
+         const dinoSprites = 2;
+        let dinoCount     = 1;
+        setInterval (() => {
+            if(dinoCount == dinoSprites) {
+                dino.className = '';
+                dinoCount = 1;
+            } else {
+                dino.className = '';
+                dino.classList.add('sp' + ++dinoCount);
+            }
+        }, 80);
+    </script>
+</body>
+</html>
