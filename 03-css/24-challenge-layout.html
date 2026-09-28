@@ -1,26 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Sprite</title>
     <style>
-        body {
+       
+        * {
             margin: 0;
-            border: 10px solid #fff;
+            padding: 0;
+        }
+
+        body {
+            border: 10px solid #ffffff;
             background-color: #17a053;
             min-height: 100dvh;
-            main {
-                header {
-                    figure.logo {
-                        background: url(imgs/spriteweb.png) no-repeat;
-                        background-position: -25px -420px;
-                        height: 160px;
-                        margin: 2rem auto;
-                        width: 160px;
-                    }
-                }
-            }
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        figure.logo {
+            background: url(imgs/spriteweb.png) no-repeat;
+            background-position: -25px -420px; 
+            height: 160px;
+            margin: 2rem auto;
+            width: 160px;
+        }
+
+        nav.menu {
+            margin-bottom: 3rem;
+        }
+
+        nav.menu ul {
+            list-style: none;
+            padding: 0;
+            width: 750px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        nav.menu ul li {
+            float: left;
+            margin: 0 7px;
+        }
+
+        nav.menu a {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0d5c22;
+            padding: 12px 25px;
+            display: block;
+            border-bottom: 3px solid #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav.menu a:hover {
+            background-color: #083d16;
+        }
+
+        section.cards {
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background-color: #17a053;
+            border: 2px solid white;
+            padding: 15px;
+            width: 28%;
+            text-align: center;
+            float: left;
+            margin: 0 1%;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: black;
+            background-color: rgba(0, 0, 0, 0.4); 
+            padding: 8px 0;
+            margin-left: -15px; 
+            margin-right: -15px; 
+        }
+
+        .card-img {
+            width: 200px; 
+            height: 200px; 
+            margin: 0 auto; 
+            background-image: url(imgs/spriteweb.png);
+            background-repeat: no-repeat;
+        }
+
+        .img-01 { background-position: -575px -7px; }
+        .img-02 { background-position: -575px -7px; }
+        .img-03 { background-position: -575px -7px; }
+
+        section.info {
+            background-color: #f0f0f0;
+            color: #333333;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto 30px auto; 
+            overflow: hidden;
+        }
+
+        .info-logo {
+            float: left;
+            width: 80px; 
+            height: 80px;
+            background-image: url(imgs/spriteweb.png);
+            background-repeat: no-repeat;
+            background-position: -300px -502px; 
+            margin-right: 20px;
+        }
+
+        .info-text {
+            float: left;
+            width: 70%;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .info-image {
+            float: right;
+            width: 100px; 
+            height: 180px;
+            background-image: url(imgs/spriteweb.png);
+            background-repeat: no-repeat;
+            background-position: -84px -210px; 
+        }
+
+        .footer {
+            background-color: #f0f0f0; 
+            max-width: 1000px; 
+            margin: 0 auto 50px auto; 
+            padding: 40px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .footer-image {
+            width: 250px; 
+            height: 150px; 
+            background-image: url(imgs/spriteweb.png);
+            background-repeat: no-repeat;
+            background-position: -496px -443px; 
+            margin: 0 auto 40px auto;
+        }
+
+        .footer-menu ul {
+            list-style: none;
+            padding: 0;
+            width: 750px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footer-menu ul li {
+            float: left;
+            margin: 0 20px;
+        }
+
+        .footer-menu a {
+            text-decoration: none;
+            color: #333333; 
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .footer-menu a:hover {
+            color: #17a053; 
         }
     </style>
 </head>
@@ -28,7 +188,76 @@
     <main>
         <header>
             <figure class="logo"></figure>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">PORTAFOLIO</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
         </header>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Sprite 01</h3>
+                <div class="card-img img-01"></div>
+            </div>
+            <div class="card">
+                <h3>Sprite 02</h3>
+                <div class="card-img img-02"></div>
+            </div>
+            <div class="card">
+                <h3>Sprite 03</h3>
+                <div class="card-img img-03"></div>
+            </div>
+        </section>
+        
+        <section class="info">
+            <div class="info-logo"></div>
+            <div class="info-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima blanditiis porro corporis incidunt dolorum quas, exercitationem quam voluptatibus maxime perspiciatis, hic iure quos cumque necessitatibus sit architecto facere aperiam fugit voluptates. Cumque, delectus error quod facilis odio suscipit culpa quis? Ullam autem maxime nostrum reprehenderit mollitia.
+                </p>
+            </div>
+            <div class="info-image"></div>
+        </section>
+
+        <section class="info">
+            <div class="info-logo"></div>
+            <div class="info-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima blanditiis porro corporis incidunt dolorum quas, exercitationem quam voluptatibus maxime perspiciatis, hic iure quos cumque necessitatibus sit architecto facere aperiam fugit voluptates. Cumque, delectus error quod facilis odio suscipit culpa quis? Ullam autem maxime nostrum reprehenderit mollitia.
+                </p>
+            </div>
+            <div class="info-image"></div>
+        </section>
+
+        <section class="info">
+            <div class="info-logo"></div>
+            <div class="info-text">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam minima blanditiis porro corporis incidunt dolorum quas, exercitationem quam voluptatibus maxime perspiciatis, hic iure quos cumque necessitatibus sit architecto facere aperiam fugit voluptates. Cumque, delectus error quod facilis odio suscipit culpa quis? Ullam autem maxime nostrum reprehenderit mollitia.
+                </p>
+            </div>
+            <div class="info-image"></div>
+        </section>
+        <footer class="footer">
+            
+            <div class="footer-image"></div>
+            
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">NOSOTROS</a></li>
+                    <li><a href="#">PORTAFOLIO</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </footer>
+
     </main>
 </body>
 </html>
