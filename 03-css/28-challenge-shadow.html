@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 Challenge shadows</title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        figure.frame {
+            background-color: #fff;
+            height: calc(25 * 25px); /*Y:49*/ 
+            width: calc(25 * 25px); /*X:41*/
+            margin: 2rem auto;
+            zoom: 0.40;
+            transition: all 0.4s ease-in;
+            &:hover {
+                transform: scale(1.4);
+            }
+            div.squares {
+                background: url(imgs/square.png);
+                opacity: 0.4;
+                z-index: 2;
+                margin-top: -20px;
+                height: calc(25 *25px);
+            }
+            div.Meliodas {
+                background-color: transparent;
+                height: 20px;
+                width: 20px;
+                box-shadow: 0px 0 0 0 white,
+                            20px 0 0 0 white,
+                            40px 0 0 0 white,
+                            60px 0 0 0 white,
+                            80px 0 0 0 white,
+                            100px 0 0 0 white,
+                            120px 0 0 0 white,
+                            140px 0 0 0 white,
+                            160px 0 0 0 white,
+                            180px 0 0 0 white,
+                            200px 0 0 0 white,
+                            220px 0 0 0 white,
+                            240px 0 0 0 black,
+                            260px 0 0 0 yellow,
+                            280px 0 0 0 yellow,
+                            300px 0 0 0 black,
+                            320px 0 0 0 white,
+                            340px 0 0 0 white,
+                            360px 0 0 0 white,
+                            380px 0 0 0 white,
+                            400px 0 0 0 white,
+                            420px 0 0 0 white,
+                            440px 0 0 0 white,
+                            460px 0 0 0 white,
+                            480px 0 0 0 white,
+                            500px 0 0 0 white,
+                            520px 0 0 0 white,
+                            540px 0 0 0 white,
+                            560px 0 0 0 white,
+                            580px 0 0 0 white,
+                            600px 0 0 0 white,
+                            620px 0 0 0 white,
+                            640px 0 0 0 white,
+                  /*fila 2*/
+                            0px 20px 0 0 white,
+                            20px 20px 0 0 white,
+                            40px 20px 0 0 white,
+                            60px 20px 0 0 white,
+                            80px 20px 0 0 white,
+                            100px 20px 0 0 white,
+                            120px 20px 0 0 white,
+                            140px 20px 0 0 white,
+                            160px 20px 0 0 white,
+                            180px 20px 0 0 white,
+                            200px 20px 0 0 white,
+                            220px 20px  0 0 black,
+                            240px 20px 0 0 yellow,
+                            260px 20px 0 0 black,
+                            280px 20px  0 0 black,
+                            300px 20px 0 0 yellow,
+                            320px 20px 0 0 black,
+                            340px 20px 0 0 white,
+                            360px 20px 0 0 white,
+                            380px 20px 0 0 white,
+                            400px 20px 0 0 white,
+                            420px 20px 0 0 white,
+                            440px 20px 0 0 white,
+                            460px 20px 0 0 white,
+                            480px 20px 0 0 white,
+                            500px 20px 0 0 white,
+                            520px 20px 0 0 white,
+                            540px 20px 0 0 white,
+                            560px 20px 0 0 white,
+                            580px 20px 0 0 white, 
+                            600px 20px 0 0 white,
+                            620px 20px 0 0 white,
+                            640px 20px 0 0 white,
+                  /* fila 3*/
+                             0px 40px 0 0 white,
+                            20px 40px 0 0 white,
+                            40px 40px 0 0 white,
+                            60px 40px 0 0 white,
+                            80px 40px 0 0 white,
+                            100px 40px 0 0 white,
+                            120px 40px 0 0 white,
+                            140px 40px 0 0 white,
+                            160px 40px 0 0 black,
+                            180px 40px 0 0 black,
+                            200px 40px 0 0 black,
+                            220px 40px  0 0 black,
+                            240px 40px 0 0 yellow,
+                            260px 40px 0 0 black,
+                            280px 40px  0 0 white,
+                            300px 40px 0 0 white,
+                            320px 40px 0 0 black,
+                            340px 40px 0 0 white,
+                            360px 40px 0 0 white,
+                            380px 40px 0 0 white,
+                            400px 40px 0 0 white,
+                            420px 40px 0 0 white,
+                            440px 40px 0 0 white,
+                            460px 40px 0 0 white,
+                            480px 40px 0 0 white,
+                            500px 40px 0 0 white,
+                            520px 40px 0 0 white,
+                            540px 40px 0 0 white,
+                            560px 40px 0 0 white,
+                            580px 40px 0 0 white, 
+                            600px 40px 0 0 white,
+                            620px 40px 0 0 white,
+                            640px 40px 0 0 white;
+                  
+
+
+            }
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>28 Challenge shadows</h1>
+            <img src="../src/img/logo-css.png" alt="css">
+            <h3>PixelArt (meliodas)</h3>
+            </header>
+            <section>
+                    <h2 class="subtitle"> Meliodas: </h2>
+                    <figure class="frame">
+                        <div class="Meliodas"></div>
+                        <div class="squares"></div>
+                    </figure>
+            </section>
+    </main>
+</body>
+</html>
