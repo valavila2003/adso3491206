@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-clip path</title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        div.clip {
+            background: url(imgs/pittsburgh.jpg) no-repeat center;
+            background-size: cover;
+            height: 280px;
+            margin-block: 1rem;
+            margin-inline: auto;
+            transition: all 0.4s ease-in;
+            width: 320px;
+        }
+        div.clip1 {
+            clip-path: polygon(50% 0, 50% 0, 100% 100%, 0% 100%);
+        }
+        div.clip2 {
+            clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        }
+        div.clip1:hover {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        div.clip2:hover {
+            clip-path: polygon(20% 0%, 0% 20%, 0 50%, 0% 80%, 20% 100%, 49% 100%, 80% 100%, 100% 80%, 100% 50%, 100% 20%, 80% 0%, 50% 0);
+        }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>32-clip path</h1>
+            <img src="../src/img/logo-css.png" alt="Css">
+            <h3>Propiedad que define una región de recorte para mostrar solo una porción específica del elemento (usando formas como circle(), polygon() o rutas SVG).</h3>
+            </header>
+            <section>
+            <h2 class="subtitle">Example 01:</h2>
+            <div class="clip clip1"></div>
+            <h2 class="subtitle">Example 02:</h2>
+            <div class="clip clip2"></div>
+        </section>
+    </main>
+</body>
+</html>
