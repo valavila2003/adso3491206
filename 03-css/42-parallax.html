@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00-template</title>
+    <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+       
+        body {
+            section {
+                div.parallax {
+                    border: 2px solid #fff;
+                    border-radius: 12px;
+                    corner-shape: squircle;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    position: absolute;
+                    width: 360px;
+                    height: 576px;
+
+                    div.layer8, div.layer7,
+                    div.layer6, div.layer5,
+                    div.layer4, div.layer3,
+                    div.layer2, div.layer1 {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 576px;
+                        width: 1024px;
+                    }
+
+                    div.layer8 {
+                        background: url(imgs/parallax/layer_08.png) repeat-x;
+                    }
+                    div.layer7 {
+                        background: url(imgs/parallax/layer_07.png) repeat-x;
+                        animation: 40s animLayer linear infinite;
+                    }
+                    div.layer6 {
+                        background: url(imgs/parallax/layer_06.png) repeat-x;
+                        animation: 35s animLayer linear infinite;
+                    }
+                      div.layer5 {
+                        background: url(imgs/parallax/layer_05.png) repeat-x;
+                        animation: 30s animLayer linear infinite;
+                    }
+                      div.layer4 {
+                        background: url(imgs/parallax/layer_04.png) repeat-x;
+                        animation: 25s animLayer linear infinite;
+                    }
+                      div.layer3 {
+                        background: url(imgs/parallax/layer_03.png) repeat-x;
+                        animation: 20s animLayer linear infinite;
+                    }
+                      div.layer2 {
+                        background: url(imgs/parallax/layer_02.png) repeat-x;
+                        animation: 10s animLayer linear infinite;
+                    }
+                      div.layer1 {
+                        background: url(imgs/parallax/layer_01.png) repeat-x;
+                        animation: 5s animLayer linear infinite;
+                    }
+
+                   div.runner {
+                        background: url(imgs/parallax/running.gif) no-repeat center / cover;
+                        position: absolute;
+                        bottom: 4rem;
+                        left: 50%;
+                        transform: translateX(-50%) scale(.6);
+                        height: 200px;
+                        width: 200px;
+                    }
+
+                }
+            }
+        }
+        @keyframes animLayer {
+            100% { background-position-x: -1024px ;}
+        }
+       @media (min-width:1024px){
+        body {
+            main {
+                width: 80%;
+                section {
+                    width: 90%;
+                    div.parallax {
+                        width: 1024px;
+                    }
+                }
+            }
+        }
+    }
+    </style>
+</head>
+<body class="css">
+    <nav class="back">
+        <a href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M232,200a8,8,0,0,1-16,0,88.1,88.1,0,0,0-88-88H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,61.66L51.31,96H128A104.11,104.11,0,0,1,232,200Z"></path></svg>
+        </a>
+    </nav>
+    <main>
+            <header class="mainmenu submenu">
+            <h1>00-template </h1>
+            <img src="../src/img/logo-css.png" alt="css">
+            <h3>Description</h3>
+            </header>
+            <section>
+            <h2 class="subtitle">Example: </h2>
+            <div class="parallax">
+                <div class="layer8"></div>
+                <div class="layer7"></div>
+                <div class="layer6"></div>
+                <div class="layer5"></div>
+                <div class="layer4"></div>
+                <div class="layer3"></div>
+                <div class="layer2"></div>
+                <div class="layer1"></div>
+                <div class="runner"></div>
+            </div>
+            </section>
+    </main>
+</body>
+</html>
