@@ -3,8 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>45-challenge-grid</title>
+    <title>45-challenge grid</title>
     <link rel="stylesheet" href="../src/css/Styles.css">
+    <style>
+        section .gallery {
+            display: grid;
+            grid-gap: 8px;
+            margin-bottom: 3rem;
+        }
+        section .gallery div {
+            border: 2px solid #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #1a0b2e;
+        }
+        section .gallery div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+       
+        .example01 {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 140px 140px 140px;
+            grid-template-areas:
+                "one two three"
+                "four two five"
+                "six six seven";
+        }
+
+        
+        .example02 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 140px 140px 140px;
+            grid-template-areas:
+                "one one two three"
+                "one one four four"
+                "five six four four";
+        }
+
+        
+        .one { grid-area: one; }
+        .two { grid-area: two; }
+        .three { grid-area: three; }
+        .four { grid-area: four; }
+        .five { grid-area: five; }
+        .six { grid-area: six; }
+        .seven { grid-area: seven; }
+    </style>
 </head>
 <body class="css">
     <nav class="back">
@@ -14,13 +62,31 @@
     </nav>
     <main>
             <header class="mainmenu submenu">
-            <h1>00-template </h1>
-            <img src="../src/img/logo-css.png" alt="css">
-            <h3>Irregular gallery: Grid areas</h3>
+            <h1>45-challenge grid</h1>
+            <img src="../src/img/logo-css.png" alt="Css">
+            <h3>Irregular Gallery: Grind Areas</h3>
             </header>
             <section>
-            <h2 class="subtitle">Example 02:</h2>
+                <h2 class="subtitle">Example 01: Dr Stone</h2>
+                <div class="gallery example01">
+                    <div class="one"><img src="imgs/img 1 DR.jpg"></div>
+                    <div class="two"><img src="imgs/img 2 Dr.jpg"></div>
+                    <div class="three"><img src="imgs/img 4 Dr.jpg"></div>
+                    <div class="four"><img src="imgs/img 3 Dr.jpg"></div>
+                    <div class="five"><img src="imgs/img 5 Dr.jpeg"></div>
+                    <div class="six"><img src="imgs/img 6 Dr.jpg"></div>
+                    <div class="seven"><img src="imgs/img 7 Dr.jpg"></div>
+                </div>
 
+                <h2 class="subtitle">Example 02: Noragami</h2>
+                <div class="gallery example02">
+                    <div class="one"><img src="imgs/img 1 noragami.jpg"></div>
+                    <div class="two"><img src="imgs/img 2 noragami.webp"></div>
+                    <div class="three"><img src="imgs/img 3 noragami.jpg"></div>
+                    <div class="four"><img src="imgs/img 4 noragami.png"></div>
+                    <div class="five"><img src="imgs/img 5 noragami.jpg"></div>
+                    <div class="six"><img src="imgs/img 6 noragami (2).jpg"></div>
+                </div>
             </section>
     </main>
 </body>
